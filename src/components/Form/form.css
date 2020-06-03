@@ -72,6 +72,13 @@ select:focus{
   font-weight: bold;
   letter-spacing: 0.5px;
 }
+#indicatorText{
+  text-transform: uppercase;
+  color: #ff6169;
+  font-size: 8px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
 .ciContainer{
   height: 163px;
   width: 284px;
@@ -108,7 +115,6 @@ select:focus{
   top: 55px;
   left: 52px;
   letter-spacing: -0.8px;
-  font-size: 12px;
 }
 #idP{
   top: 49px;
@@ -124,6 +130,10 @@ select:focus{
   }
   .submitButton:hover{
     transform: scale(1.2);
+  }
+  #indicatorText{
+    font-size: 23px;
+    margin-bottom: 64px;
   }
   .ciContainer{
     height: 313px;
@@ -147,7 +157,8 @@ select:focus{
   #tribeP{
     top: 119px;
     left: 97px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.8px;
+    font-size: 12px;
   }
   #idP{
     top: 111px;

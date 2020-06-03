@@ -19,6 +19,14 @@ export default function Form() {
     return Math.round(Math.random() * (max - min) + min)
   }
 
+  const checkedform = () => {
+    let enable = true;
+    if (user.name.length > 0 && user.age.length > 0 && user.country.length > 0 && user.tribe.length > 0){ 
+      enable = false
+    }
+    return enable
+  }
+
   return (
     <>
       <div className="formContainer" style={{display : toogle ? "none" : "flex"}}>
@@ -51,19 +59,19 @@ export default function Form() {
             <option value="Eco Warriors">Eco Warriors</option>
             <option value="Cyber Kids">Cyber Kids</option>
           </select>
-          <button type="submit" className="submitButton" onClick={submituser}>GENERATE</button>
+          <button type="submit" className="submitButton" onClick={submituser} disabled={checkedform()}>GENERATE</button>
       </div>
 
-      <div className="ciContainer" style={{display : toogle ? "block" : "none", backgroundImage: `url(${CIChromatica})`}}>
-        {/* <img src={CIChromatica} alt="Chromatica ID"/> */}
-        <p id="nameP">{user.name}</p>
-        <p id="ageP">{user.age}</p>
-        <p id="countryP">{user.country}</p>
-        <p id="tribeP">{user.tribe}</p>
-        <p id="idP">{user.id}</p>
+      <div style={{display : toogle ? "block" : "none"}}>
+        <p id="indicatorText">Your card is ready ! Take a screenshoot and share it</p>
+        <div className="ciContainer" style={{backgroundImage: `url(${CIChromatica})`}}>
+          <p id="nameP">{user.name}</p>
+          <p id="ageP">{user.age}</p>
+          <p id="countryP">{user.country}</p>
+          <p id="tribeP">{user.tribe}</p>
+          <p id="idP">{user.id}</p>
+        </div>
       </div>
     </>
   )
 }
-
-///onClick={submituser} disabled={checkedform()} 
