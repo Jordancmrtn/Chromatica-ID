@@ -3,7 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import Title from './components/Title'
 import Section2 from './components/Section2'
-import CtxUser from './Context/CtxUser'
+import CtxUser from './context/CtxUser'
 
 function App() {
 
