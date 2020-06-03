@@ -1,0 +1,34 @@
+.bannerContainer{
+  background-color: #ff6169;
+  color: #10784F;
+  text-transform: uppercase;
+  font-family: Helvetica;
+  font-weight: bold;
+  overflow: hidden;
+  transform: rotate(-3deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.bannerContainer p {
+  font-size: 21px;
+  margin: 0;
+  white-space:nowrap;
+  word-spacing: 12px;
+}
+
+@media screen and (min-width: 376px) and (max-width: 621px) {
+  .bannerContainer p {
+    font-size: 39px;
+    word-spacing: 22px;
+  }
+}
+
+@media screen and (min-width: 621px) {
+  .bannerContainer p {
+    font-size: 59px;
+    word-spacing: 22px;
+  }
+}
