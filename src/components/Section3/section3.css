@@ -1,0 +1,14 @@
+#imgInfosAlbum{
+  width: 60%;
+  margin: 40px 0;
+}
+#infosFooter{
+  color: #ff6169;
+  font-weight: bold;
+  font-size: 9px;
+  margin: 0 0 13px 0;
+}
+#infosFooter a{
+  text-decoration: none;
+  color: #ff6169;
+}
