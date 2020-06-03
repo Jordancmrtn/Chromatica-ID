@@ -12,8 +12,8 @@
   margin-bottom: 42px;
   border-color: transparent;
   background: #10784F;
-  box-shadow:  11px 11px 31px  #16a46c, 
-              -11px -11px 31px #0a4c32;
+  box-shadow: 8px 8px 10px #42a176, 
+              -11px -6px 17px #023f28;
   padding: 12px;
   color: #ff6169;
   text-transform: uppercase;
@@ -25,8 +25,8 @@
   margin-bottom: 42px;
   border-color: transparent;
   background: #10784F;
-  box-shadow:  11px 11px 31px  #16a46c, 
-              -11px -11px 31px #0a4c32;
+  box-shadow: 8px 8px 10px #42a176, 
+              -11px -6px 17px #023f28;
   padding: 12px;
   color: #ff6169;
   text-transform: uppercase;
@@ -63,8 +63,8 @@ select:focus{
 .submitButton{
   border-color: transparent;
   background: #10784F;
-  box-shadow:  11px 11px 31px  #0a4c32, 
-              -11px -11px 31px #16a46c;
+  box-shadow:  8px 8px 11px #023f28,
+              -7px -3px 10px #42a176; 
   color: #ff6169;
   border-radius: 10px;
   padding: 6px 15px;
@@ -72,7 +72,48 @@ select:focus{
   font-weight: bold;
   letter-spacing: 0.5px;
 }
-
+.ciContainer{
+  height: 163px;
+  width: 284px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 52px;
+  position: relative;
+  border: white 13px solid;
+}
+.ciContainer p {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #10784F;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 8px;
+}
+#nameP {
+  top: 75px;
+  left: 60px;
+}
+#ageP{
+  top: 69px;
+  left: 50px;
+}
+#countryP{
+  top: 62px;
+  left: 65px;
+}
+#tribeP{
+  top: 55px;
+  left: 52px;
+  letter-spacing: -0.8px;
+  font-size: 12px;
+}
+#idP{
+  top: 49px;
+  left: 43px;
+}
 
 @media screen and (min-width: 621px) {
   .formContainer input {
@@ -84,4 +125,33 @@ select:focus{
   .submitButton:hover{
     transform: scale(1.2);
   }
+  .ciContainer{
+    height: 313px;
+    width: 534px;
+  }
+  .ciContainer p {
+    font-size: 14px;
+  }
+  #nameP {
+    top: 146px;
+    left: 110px;
+  }
+  #ageP{
+    top: 136px;
+    left: 92px;
+  }
+  #countryP{
+    top: 127px;
+    left: 122px;
+  }
+  #tribeP{
+    top: 119px;
+    left: 97px;
+    letter-spacing: -0.5px;
+  }
+  #idP{
+    top: 111px;
+    left: 78px;
+  }
+
 }

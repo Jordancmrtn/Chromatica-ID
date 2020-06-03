@@ -6,26 +6,31 @@ import Section2 from './components/Section2'
 import Section3 from './components/Section3'
 import CtxUser from './context/CtxUser'
 import Form from './components/Form'
+import CtxToogle from './context/CtxToogle'
 
 function App() {
 
   const [user, setUser] = useState({
-    name : null,
-    age: null,
-    country: null,
-    tribe: null
+    name : "",
+    age: "",
+    country: "",
+    tribe: "",
+    id: ""
   });
+  const [toogle, setToogle] = useState(false)
 
 
   return (
     <div className="App">
-      <CtxUser.Provider value={user}>
+      <CtxToogle.Provider value={[toogle, setToogle]}>
+      <CtxUser.Provider value={[user, setUser]}>
         <Header/>
         <Title/>
         <Form/>
         <Section2/>
         <Section3/>
       </CtxUser.Provider>
+      </CtxToogle.Provider>
     </div>
   );
 }
