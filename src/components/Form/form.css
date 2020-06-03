@@ -1,0 +1,168 @@
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 52px;
+  margin-top: 20px;
+}
+.formContainer input{
+  width: 60%;
+  border-radius: 40px;
+  margin-bottom: 42px;
+  border-color: transparent;
+  background: #10784F;
+  box-shadow: 8px 8px 10px #42a176, 
+              -11px -6px 17px #023f28;
+  padding: 12px;
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.formContainer select{
+  width: 67%;
+  border-radius: 40px;
+  margin-bottom: 42px;
+  border-color: transparent;
+  background: #10784F;
+  box-shadow: 8px 8px 10px #42a176, 
+              -11px -6px 17px #023f28;
+  padding: 12px;
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input:focus{
+  outline: none;
+}
+select:focus{
+  outline: none;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ff6169;
+  opacity: 1; /* Firefox */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.submitButton{
+  border-color: transparent;
+  background: #10784F;
+  box-shadow:  8px 8px 11px #023f28,
+              -7px -3px 10px #42a176; 
+  color: #ff6169;
+  border-radius: 10px;
+  padding: 6px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+#indicatorText{
+  text-transform: uppercase;
+  color: #ff6169;
+  font-size: 8px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.ciContainer{
+  height: 163px;
+  width: 284px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 52px;
+  position: relative;
+  border: white 13px solid;
+}
+.ciContainer p {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #10784F;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 8px;
+}
+#nameP {
+  top: 75px;
+  left: 60px;
+}
+#ageP{
+  top: 69px;
+  left: 50px;
+}
+#countryP{
+  top: 62px;
+  left: 65px;
+}
+#tribeP{
+  top: 55px;
+  left: 52px;
+  letter-spacing: -0.8px;
+}
+#idP{
+  top: 49px;
+  left: 43px;
+}
+
+@media screen and (min-width: 621px) {
+  .formContainer input {
+    width: 50%;
+  }
+  .formContainer select {
+    width: 52%;
+  }
+  .submitButton:hover{
+    transform: scale(1.2);
+  }
+  #indicatorText{
+    font-size: 23px;
+    margin-bottom: 64px;
+  }
+  .ciContainer{
+    height: 313px;
+    width: 534px;
+  }
+  .ciContainer p {
+    font-size: 14px;
+  }
+  #nameP {
+    top: 146px;
+    left: 110px;
+  }
+  #ageP{
+    top: 136px;
+    left: 92px;
+  }
+  #countryP{
+    top: 127px;
+    left: 122px;
+  }
+  #tribeP{
+    top: 119px;
+    left: 97px;
+    letter-spacing: -0.8px;
+    font-size: 12px;
+  }
+  #idP{
+    top: 111px;
+    left: 78px;
+  }
+
+}
