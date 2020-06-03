@@ -1,0 +1,87 @@
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 52px;
+  margin-top: 20px;
+}
+.formContainer input{
+  width: 60%;
+  border-radius: 40px;
+  margin-bottom: 42px;
+  border-color: transparent;
+  background: #10784F;
+  box-shadow:  11px 11px 31px  #16a46c, 
+              -11px -11px 31px #0a4c32;
+  padding: 12px;
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.formContainer select{
+  width: 67%;
+  border-radius: 40px;
+  margin-bottom: 42px;
+  border-color: transparent;
+  background: #10784F;
+  box-shadow:  11px 11px 31px  #16a46c, 
+              -11px -11px 31px #0a4c32;
+  padding: 12px;
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+input:focus{
+  outline: none;
+}
+select:focus{
+  outline: none;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ff6169;
+  opacity: 1; /* Firefox */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.submitButton{
+  border-color: transparent;
+  background: #10784F;
+  box-shadow:  11px 11px 31px  #0a4c32, 
+              -11px -11px 31px #16a46c;
+  color: #ff6169;
+  border-radius: 10px;
+  padding: 6px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+
+@media screen and (min-width: 621px) {
+  .formContainer input {
+    width: 50%;
+  }
+  .formContainer select {
+    width: 52%;
+  }
+  .submitButton:hover{
+    transform: scale(1.2);
+  }
+}

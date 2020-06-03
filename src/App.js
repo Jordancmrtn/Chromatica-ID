@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Title from './components/Title'
 import Section2 from './components/Section2'
 import CtxUser from './context/CtxUser'
+import Form from './components/Form'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <CtxUser.Provider value={user}>
         <Header/>
         <Title/>
+        <Form/>
         <Section2/>
       </CtxUser.Provider>
     </div>
