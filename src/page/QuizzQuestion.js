@@ -7,8 +7,8 @@ import ProgressBar from '../components/progressBar'
 import { useParams } from "react-router-dom";
 
 
-export default function QuizzQuestion({ match }) {
-  
+export default function QuizzQuestion() {
+
   let {id} = useParams()
 
   return (
