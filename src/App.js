@@ -1,9 +1,13 @@
 import React, {useState} from 'react'
 import './App.css'
-import CardID from './components/page/CardID.js'
-import Quizz from './components/page/Quizz.js'
+
+import CardID from './page/CardID'
+import Quizz from './page/Quizz'
+import QuizzQuestion from './page/QuizzQuestion'
+
 import CtxUser from './context/CtxUser'
 import CtxToogle from './context/CtxToogle'
+
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -26,6 +30,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={CardID} />
           <Route exact path="/quizz" component={Quizz} />
+          <Route exact path="/quizz/:id" component={QuizzQuestion} />
         </Switch>
       </CtxUser.Provider>
       </CtxToogle.Provider>

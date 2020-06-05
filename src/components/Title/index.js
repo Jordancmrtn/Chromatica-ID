@@ -16,7 +16,6 @@ export default function Title({title}) {
     }
   }
 
-
   return (
     <div className="titleContainer">
       <img src={Logo} alt="" className="logoRond"/>
@@ -27,5 +26,3 @@ export default function Title({title}) {
     </div>
   )
 }
-
-//

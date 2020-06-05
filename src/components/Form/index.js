@@ -1,9 +1,10 @@
-import React,  {useState, useContext} from 'react'
+import React,  {useContext} from 'react'
 import './form.css'
 import InputMask from 'react-input-mask'
 import CtxUser from '../../context/CtxUser'
 import CIChromatica from '../../assets/CIchromatica.png'
 import CtxToogle from '../../context/CtxToogle'
+import Button from '../Button'
 
 export default function Form() {
 
@@ -59,7 +60,7 @@ export default function Form() {
             <option value="Eco Warriors">Eco Warriors</option>
             <option value="Cyber Kids">Cyber Kids</option>
           </select>
-          <button type="submit" className="submitButton" onClick={submituser} disabled={checkedform()}>GENERATE</button>
+          <Button onClick={submituser} disabled={checkedform()} title="generate"/>
       </div>
 
       <div style={{display : toogle ? "block" : "none"}}>
