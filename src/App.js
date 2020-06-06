@@ -23,13 +23,13 @@ function App() {
     id: ""
   });
   const [toogle, setToogle] = useState(false)
-
+  const [answers, setAnswers] = useState([])
 
   return (
     <div className="App">
       <CtxToogle.Provider value={[toogle, setToogle]}>
       <CtxUser.Provider value={[user, setUser]}>
-      <CtxAnswer.Provider value={}>
+      <CtxAnswer.Provider value={[answers, setAnswers]}>
         <Switch>
           <Route exact path="/" component={CardID} />
           <Route exact path="/quizz" component={Quizz} />
