@@ -1,0 +1,20 @@
+#newsbanner{
+  background-color:  #ff6169;
+  color: #10784F;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 52px;
+}
+#newsbanner span{
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 621px) {
+  #newsbanner{
+    font-size: 20px;
+  }
+  #newsbanner span{
+    font-size: 25px;
+  }
+}

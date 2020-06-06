@@ -4,30 +4,23 @@ import Logo from '../../assets/logoAlbum.png'
 import CtxToogle from '../../context/CtxToogle'
 
 
-export default function Title() {
+export default function Title({title}) {
 
   const toogle = useContext(CtxToogle)
 
-  const title = () =>{
-    let title
-    switch (toogle) {
-      case false:
-        title = "Generate your id card"
-      case true:
-        title = "Welcome to Chromatica"
-      default:
-        title = "Generate your id card"
-      break;
+  const getTitle = () =>{
+    if(title === "Welcome to Chromatica"){
+      return toogle[0] ? "Welcome to Chromatica" : "Generate your id card"
+    } else {
+      return title
     }
-    return
   }
-
 
   return (
     <div className="titleContainer">
       <img src={Logo} alt="" className="logoRond"/>
       <img src={Logo} alt="" className="logoRond"/>
-      <h1>{toogle[0] ? "Welcome to Chromatica" : "Generate your id card"}</h1>
+      <h1>{getTitle()}</h1>
       <img src={Logo} alt="" className="logoRond"/>
       <img src={Logo} alt="" className="logoRond"/>
     </div>

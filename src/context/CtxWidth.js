@@ -1,6 +1,6 @@
 import React from 'react'
 
 //Create the context for share information everywhere with hooks
-const CtxToogle = React.createContext(false);
+const CtxWidth = React.createContext(20);
 
-export default CtxToogle;
+export default CtxWidth;
