@@ -1,13 +1,23 @@
 .section1Container{
-  margin-bottom: 112px;
+  margin-bottom: 62px;
+}
+.section1Container .submitButton{
+  width: 185px;
 }
 .section1Container p {
   color: #ff6169;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 12px;
   letter-spacing: 1.01px;
+  margin-bottom: 42px;
 }
 .section1Container p span {
   font-size: 30px;
+}
+
+@media screen and (min-width: 375px) {
+  .section1Container p {
+    font-size: 20px;
+  }
 }

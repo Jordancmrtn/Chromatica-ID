@@ -2,18 +2,39 @@
   color: #ff6169;
   text-transform: uppercase;
   font-weight: bold;
+  padding: 0 46px;
+  margin-bottom: 52px;
 }
 .answersContainer{
   width: 60%;
-  height: 234px;
+  height: 384px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 62px;
+}
+.answersContainer .submitButton{
+  width: 225px;
+  margin-bottom: 29px;
 }
 .buttonsContainer{
   display: flex;
   flex-direction: column;
   width: fit-content;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 375px) {
+  .answersContainer{
+    height: 234px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .answersContainer .submitButton{
+    width: 275px;
+  }
+  .questionContainer p{
+    padding: 0;
+  }
 }

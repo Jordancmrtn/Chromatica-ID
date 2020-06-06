@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import { useParams } from "react-router-dom";
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
 import Header from '../../components/Header'
 import Title from '../../components/Title'
@@ -16,11 +16,9 @@ export default function QuizzQuestion() {
 
   let {id} = useParams()
 
-  console.log(id)
-
   return (
     <>
-      <Header/>
+      <Header id="quizz"/>
       <Title title="Do you know Lady Gaga ?"/>
       <ProgressBar/>
       <div className="questionContainer">

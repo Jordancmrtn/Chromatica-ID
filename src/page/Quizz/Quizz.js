@@ -20,7 +20,7 @@ export default function Quizz() {
 
   return (
     <>
-      <Header/>
+      <Header id="quizz"/>
       <Title title="Do you know Lady Gaga ?"/>
       <div className="section1Container">
         <p>Answer the <span>5</span> questions that arrive...</p>
