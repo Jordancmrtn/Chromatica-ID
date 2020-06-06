@@ -1,0 +1,19 @@
+.questionContainer p{
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.answersContainer{
+  width: 60%;
+  height: 234px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 62px;
+}
+.buttonsContainer{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  justify-content: space-around;
+}

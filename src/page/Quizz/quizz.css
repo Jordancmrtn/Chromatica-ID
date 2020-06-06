@@ -1,0 +1,13 @@
+.section1Container{
+  margin-bottom: 112px;
+}
+.section1Container p {
+  color: #ff6169;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1.01px;
+}
+.section1Container p span {
+  font-size: 30px;
+}

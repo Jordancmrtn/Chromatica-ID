@@ -1,0 +1,32 @@
+[
+  {
+    "id":1,
+    "question": "The track “Brown Eyes” was influenced by who ?",
+    "FindAnswer":["Madonna", "Queen", "Elton John", "David Bowie"], 
+    "rightAnaswer":"Queen"
+  },
+  {
+    "id":2,
+    "question": "Lady Gaga made an appearance in Gossip Girl. What did she perform ?",
+    "FindAnswer":[ "Paparazzi", "LoveGame", "Bad Romance", "Beautiful Dirty Rich"], 
+    "rightAnaswer":"Bad Romance"
+  },
+  {
+    "id":3,
+    "question": "Lady Gaga released a gif cover for one of her singles. Which one ?",
+    "FindAnswer":[ "Rain on me", "Applause", "The cure", "Judas"], 
+    "rightAnaswer":"Applause"
+  },
+  {
+    "id":4,
+    "question": "Where is Lady Gaga’s massive archive where she keeps all of her outfits ?",
+    "FindAnswer":[ "Hollywood", "New York", "Las Vega", "Chicago"], 
+    "rightAnaswer":"Hollywood"
+  },
+  {
+    "id":5,
+    "question": "How many people watched the Lady Gaga's halftime performance at Super Bowl ?",
+    "FindAnswer":[ "117.5 million", "120.5 million", "112.5 million", "120.5 million"], 
+    "rightAnaswer":"117.5 million"
+  }
+]

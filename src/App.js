@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import './App.css'
 
 import CardID from './page/CardID'
-import Quizz from './page/Quizz'
-import QuizzQuestion from './page/QuizzQuestion'
+import Quizz from './page/Quizz/Quizz'
+import QuizzQuestion from './page/QuizzQuestion/QuizzQuestion'
 
 import CtxUser from './context/CtxUser'
 import CtxToogle from './context/CtxToogle'
