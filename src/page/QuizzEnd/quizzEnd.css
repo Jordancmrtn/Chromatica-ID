@@ -23,21 +23,36 @@ h2{
 }
 .question{
   font-weight: bold;
-  font-size: 13px;
+  font-size: 19px;
   padding: 0 35px;
 }
 .answerContainer{
   display: flex;
   justify-content: center;
-  margin: 0 32%;
+  margin: 0 12%;
   align-items: center;
 }
 .answerTitle{
-  margin-right: 12px;
+  margin-right: 12px !important;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 375px) {
   .answerContainerFull{
     width: 40%;
+  }
+  .answerContainer{
+    margin: 23px 0%;
+  }
+  .answerTitle{
+    font-size: 22px !important;
+    font-weight: bold;
+  }
+  .question{
+    font-size: 23px;
+  }
+  .answerContainerFull p {
+    font-size: 22px;
+    margin: 0;
   }
 }
