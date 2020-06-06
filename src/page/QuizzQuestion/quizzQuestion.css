@@ -29,7 +29,7 @@
   .answersContainer{
     height: 234px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .answersContainer .submitButton{
     width: 275px;
