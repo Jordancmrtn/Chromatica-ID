@@ -16,9 +16,7 @@ export default function QuizzQuestion() {
 
   let {id} = useParams()
 
-  useEffect(() => {
-    console.log(JSON[id].question)
-  }, [id])
+  console.log(id)
 
   return (
     <>
@@ -30,12 +28,12 @@ export default function QuizzQuestion() {
       </div>
       <div className="answersContainer">
         <div className="buttonsContainer">
-          <ButtonQuizz id={JSON[id].FindAnswer[0]} title={JSON[id].FindAnswer[0]}/>
-          <ButtonQuizz id={JSON[id].FindAnswer[1]} title={JSON[id].FindAnswer[1]}/>
+          <ButtonQuizz id={JSON[id].FindAnswer[0]} index={id} title={JSON[id].FindAnswer[0]}/>
+          <ButtonQuizz id={JSON[id].FindAnswer[1]} index={id} title={JSON[id].FindAnswer[1]}/>
         </div>
         <div className="buttonsContainer">
-          <ButtonQuizz id={JSON[id].FindAnswer[2]} title={JSON[id].FindAnswer[2]}/>
-          <ButtonQuizz id={JSON[id].FindAnswer[3]} title={JSON[id].FindAnswer[3]}/>
+          <ButtonQuizz id={JSON[id].FindAnswer[2]} index={id} title={JSON[id].FindAnswer[2]}/>
+          <ButtonQuizz id={JSON[id].FindAnswer[3]} index={id} title={JSON[id].FindAnswer[3]}/>
         </div>
       </div>
       <Section2/>
